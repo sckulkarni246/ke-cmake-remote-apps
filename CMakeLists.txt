@@ -4,4 +4,4 @@ set(REM_SRCS "")
 
 set(REM_SRCS ${REM_SRCS} ${CMAKE_CURRENT_SOURCE_DIR}/remote_hello_world.c)
 
-add_library(remhw STATIC ${REM_SRCS})
+set(SRCS ${SRCS} ${REM_SRCS} CACHE INTERNAL "srcs" FORCE)
